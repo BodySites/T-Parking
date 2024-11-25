@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import mockReducer from '@/app/redux/features/mockSlice';
+import mockReducer from '@/app/redux/features/mockSlice';
 // import { mockAPI } from '@/app/redux/features/mockApi';
 
 export const store = configureStore({
   reducer: {
-    // mockReducer,
+    mockReducer,
     // [mockAPI.reducerPath]: mockAPI.reducer,
   },
   // middleware: (getDefaultMiddleware) =>

@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
+import envs from '@/config/environments';
 
+/* eslint-disable */
 export async function POST(request: Request) {
   const body = await request.json();
   const { name, lastname } = body;
@@ -8,7 +10,7 @@ export async function POST(request: Request) {
     return new NextResponse('Missing Fields', { status: 400 });
   }
 
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
+  const response = await fetch(`${envs.baseApiUrl}`, {
     method: 'POST',
     body: JSON.stringify({ name, lastname }),
     headers: {
