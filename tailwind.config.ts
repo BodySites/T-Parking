@@ -14,6 +14,7 @@ const config: Config = {
         text_01: 'var(--text-01)',
         text_black: 'var(--text-black)',
         base_primary: 'var(--base-primary)',
+        base_primary_hover: 'var(--base-primary-hover)',
         base_white: 'var(--base-white)',
         base_red: 'var(--base-red)',
         base_green: 'var(--base-green)',

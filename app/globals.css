@@ -8,12 +8,18 @@
   --text-01: #333333;
   --text-black: #000000;
   --base-primary: #ffdd2e;
+  --base-primary-hover: #f1d12c;
   --base-01: #343a3f;
   --base-02: #d7d7d7;
   --base-red: #ff0000;
   --base-green: #04ff15;
   --base-gray-01: #868686;
   --base-gray-02: #d9d9d9;
+}
+
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 
 body {
@@ -24,6 +30,7 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+  background: var(--base-bg);
 }
 
 ::-webkit-scrollbar-thumb {
